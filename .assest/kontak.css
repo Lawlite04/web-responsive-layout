@@ -1,0 +1,86 @@
+
+.form-input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form-input input, textarea, button{
+    width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+}
+.form-input input, textarea{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.form-input button{
+    background-color: rgb(3, 153, 115);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.form-input button:hover{
+    background-color: rgb(2, 207, 173);
+    cursor: pointer;
+}
+
+.contact{
+    
+    width: 500px;
+    padding: 15px;
+    margin: 10px auto;
+    display: flex;
+    justify-self: start;
+}
+.gambar{
+    width: 100px;
+}
+.gambar img{
+    max-width: 50px;
+    min-width: 50px;
+    padding: 0;
+    margin: 30px auto;
+    border-radius: 50%;
+}
+
+.info-text{
+    margin: 10px;
+    padding: 10px;
+    
+}
+.info-text h3{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.info-text p, .info-text li{
+    font-size: 14px;
+    list-style: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width : 960px){
+
+    .contact{
+        width: 100%;
+        float: inherit;
+    }
+    .contact .gambar{
+        width: 50%;
+    }
+    .gambar img{
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .info-text{
+        width: 200%;
+        float: inherit;
+    }
+    
+}
+@media screen and (max-width : 460px){
+    .info-text p, .info-text ul li{
+        font-size: 11px;
+    }
+}

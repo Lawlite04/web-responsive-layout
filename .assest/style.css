@@ -1,0 +1,191 @@
+
+body{
+    background: #eeeeee;
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+}
+header{
+    text-align: center;
+    color: #232323;
+}
+header .judul{
+    font-size: 18pt;
+}
+header .deskripsi{
+    font-size: 11pt;
+}
+.wrap{
+    width: 950px;
+    margin: 25px auto;
+}
+nav.menu ul{
+    overflow: hidden;
+    background-color: #1abc9c;
+    color: #ffffff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 650px;
+    float: left;
+}
+nav.menu ul li{
+    float: left;
+    margin: 0;
+}
+nav.menu ul li a{
+    padding: 25px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+nav.menu ul  li a:hover{
+    background-color: #16a085;
+    text-decoration: underline;
+}
+.sidebar{
+    float: right;
+    width: 275px;
+}
+.sidebar .widget{
+    padding: 25px;
+    background-color: #ffffff;
+    margin: 0 0 25px;
+    border-bottom: 2px solid #ffffff;
+    transition: all 0.5s ease;
+}
+.sidebar .widget h2{
+    color: #3498db;
+    font-size: 18px;
+    padding: 0;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.sidebar .widget p{
+    font-size: 14px;
+}
+.sidebar .widget p:last-child{
+    margin: 0;
+}
+.sidebar .widget:hover{
+    border-bottom: 2px solid #3498db;
+}
+.blog{
+    float: left;
+}
+.konten{
+    width: 600px;
+    background-color: #ffffff;
+    padding: 25px;
+    margin: 25px auto;
+    border: 1px solid #dedede;
+}
+.konten img{
+    min-width: 400px;
+    max-width: 400px;
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+.post-info{
+    text-transform: uppercase;
+    margin: 0 0 25px 10px;
+    font-size: 13px;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background: #dedede;
+}
+.konten h1{
+    color: #666666;
+}
+.konten .lengkap{
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.konten .lengkap:hover{
+    margin-left: 15px;
+}
+
+@media screen and (max-width : 960px){
+    header{
+        position: inherit;
+    }
+    .wrap{
+        width: 90%;
+        margin: 25px auto;
+    }
+    .sidebar{
+        width: 100%;
+        float: right;
+        margin: 25px 0 0;
+    }
+    .sidebar .widget{
+        padding: 5%;
+    }
+    nav.menu ul {
+        width: 100%;
+        float: inherit;
+    }
+    nav.menu ul li {
+        float: inherit;
+        margin: 0;
+    }
+    nav.menu ul a{
+        padding: 15px;
+        font-size: 16px;
+        border-bottom: 1px solid #16a085;
+        border-top: 1px solid #1abc9c;
+    }
+    .blog{
+        width: 90%;
+    }
+    .konten{
+        float: inherit;
+        margin: 0 auto 25px;
+        width: 100%;
+        border: 1px solid #eeeeee;
+        padding: 5%;
+        background: #ffffff;
+    }
+    .konten img{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 100%;
+        
+    }
+    .post-info{
+        margin-left: 0;
+    }
+
+    /* Service css */
+    .tabel{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:460px){
+    nav.menu ul a {
+        padding: 15px;
+        font-size: 14px;
+    }
+    .sidebar{
+        display: none;
+    }
+    .post-info{
+        display: none;
+    }
+    .konten{
+        margin: 25px auto;
+    }
+    .tabel tr td{
+        font-size: 12px;
+    }   
+}
